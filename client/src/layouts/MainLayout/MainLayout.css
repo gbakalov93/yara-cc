@@ -1,0 +1,11 @@
+@tailwind components;
+
+@layer components {
+  #main {
+    @apply flex-1 flex flex-col items-center text-center p-32;
+  }
+
+  #main > div {
+    @apply flex-1 flex flex-col items-center overflow-auto;
+  }
+}

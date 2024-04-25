@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  #main-wrapper {
+    @apply flex flex-1 h-screen;
+  }
+
+  #error,
+  #success {
+    @apply whitespace-pre-wrap;
+  }
+
+  input:not([type="checkbox"]),
+  select {
+    @apply w-full p-2.5 border border-gray-300 rounded-sm;
+  }
+
+  button.primary,
+  button.secondary {
+    @apply py-2 px-4 rounded disabled:opacity-75;
+  }
+  button.primary {
+    @apply bg-blue-500 enabled:hover:bg-blue-700 text-white font-bold;
+  }
+  button.secondary {
+    @apply border enabled:hover:bg-gray-50;
+  }
+
+  .custom-form {
+    @apply w-1/2 space-y-4;
+  }
+
+  .custom-form .input-wrapper {
+    @apply space-y-1;
+  }
+
+  .custom-form .btn-wrapper {
+    @apply space-x-2;
+  }
+}

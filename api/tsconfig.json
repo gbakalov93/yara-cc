@@ -1,0 +1,31 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "@shared/models/*": [
+        "../models/*"
+      ],
+    },
+    "rootDirs": [
+      "src",
+      "../models"
+    ],
+    "outDir": "dist",
+    "lib": [
+      "es2020"
+    ],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "types": [
+      "node"
+    ]
+  },
+  "tsc-alias": {
+    "resolveFullPaths": true,
+    "verbose": false
+  }
+}
